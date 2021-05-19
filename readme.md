@@ -17,7 +17,7 @@ The use-case is being able to quickly copy a URL by clicking it when using a “
 
 ## Download
 
-TODO
+[**Latest release.**](https://github.com/sindresorhus/Copy-URL/releases/latest)
 
 Requires macOS 11 or later.
 

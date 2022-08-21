@@ -11,25 +11,28 @@
 
 The app copies the URL passed to it and then quits. It also registers itself as a browser.
 
-The use-case is being able to quickly copy a URL by clicking it when using a “browser picker” app, like [Velja](https://sindresorhus.com/velja). Since the app registers itself as a browser, it will show up as a browser in the Velja browser prompt, and when selected, copies the URL to the clipboard.
+The use-case is being able to quickly copy a URL by clicking it when using a browser picker app like [Velja](https://sindresorhus.com/velja). Since the app registers itself as a browser, it will show up as a browser in the Velja browser prompt, and when selected, copies the URL to the clipboard.
 
 <img src="Stuff/screenshot.png" width="381">
 
 ## Download
 
-[**Latest release.**](https://github.com/sindresorhus/Copy-URL/releases/latest)
+[**Latest release**](https://github.com/sindresorhus/Copy-URL/releases/latest)
 
-Requires macOS 12 or later.
+<sup>Requires macOS 12 or later.</sup>
+
+## Install
+
+- Download the app and unzip it.
+- Move the app into the `/Applications` folder.
 
 ## Usage
 
-- Download the app and unzip it
-- Move the app into the `/Applications` folder
+Open a URL with it like you would with a browser.
 
-## Browser pickers
+## Related
 
-- [Velja](https://sindresorhus.com/velja)
-- [Choosy](https://www.choosyosx.com)
+- [Safari Private](https://github.com/sindresorhus/Safari-Private) - Open the given URL in a private Safari window
 
 ## Links
 

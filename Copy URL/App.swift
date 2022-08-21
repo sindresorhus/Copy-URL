@@ -11,7 +11,7 @@ struct AppMain: App {
 
 private final class AppDelegate: NSObject, NSApplicationDelegate {
 	func application(_ application: NSApplication, open urls: [URL]) {
-		guard let firstUrl = urls.first else {
+		guard let firstURL = urls.first else {
 			NSApp.terminate(nil)
 			return
 		}
@@ -19,8 +19,8 @@ private final class AppDelegate: NSObject, NSApplicationDelegate {
 		NSPasteboard.general.prepareForNewContents()
 
 		let pasteboardItem = NSPasteboardItem()
-		pasteboardItem.setString(firstUrl.absoluteString, forType: .URL)
-		pasteboardItem.setString(firstUrl.absoluteString, forType: .string)
+		pasteboardItem.setString(firstURL.absoluteString, forType: .URL)
+		pasteboardItem.setString(firstURL.absoluteString, forType: .string)
 		NSPasteboard.general.writeObjects([pasteboardItem])
 
 		NSApp.terminate(nil)

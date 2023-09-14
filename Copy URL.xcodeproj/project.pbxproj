@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E376689C256E9370005D27A9 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376689B256E9370005D27A9 /* App.swift */; };
 		E37668A0256E9372005D27A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E376689F256E9372005D27A9 /* Assets.xcassets */; };
+		E37829042EA77011007817A0 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = E37829032EA77011007817A0 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,15 +18,14 @@
 		E376689F256E9372005D27A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37668A4256E9372005D27A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37668A5256E9372005D27A9 /* Copy_URL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copy_URL.entitlements; sourceTree = "<group>"; };
+		E37829032EA77011007817A0 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E3766895256E9370005D27A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -51,6 +51,7 @@
 			children = (
 				E376689B256E9370005D27A9 /* App.swift */,
 				E376689F256E9372005D27A9 /* Assets.xcassets */,
+				E37829032EA77011007817A0 /* AppIcon.icon */,
 				E37668A4256E9372005D27A9 /* Info.plist */,
 				E37668A5256E9372005D27A9 /* Copy_URL.entitlements */,
 			);
@@ -70,8 +71,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Copy URL";
 			productName = "Copy URL";
 			productReference = E3766898256E9370005D27A9 /* Copy URL.app */;
@@ -83,8 +82,9 @@
 		E3766890256E9370005D27A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					E3766897256E9370005D27A9 = {
 						CreatedOnToolsVersion = 12.2;
@@ -92,7 +92,6 @@
 				};
 			};
 			buildConfigurationList = E3766893256E9370005D27A9 /* Build configuration list for PBXProject "Copy URL" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -100,6 +99,8 @@
 				Base,
 			);
 			mainGroup = E376688F256E9370005D27A9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = E3766899256E9370005D27A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -112,30 +113,28 @@
 /* Begin PBXResourcesBuildPhase section */
 		E3766896256E9370005D27A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E37668A0256E9372005D27A9 /* Assets.xcassets in Resources */,
+				E37829042EA77011007817A0 /* AppIcon.icon in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3766894256E9370005D27A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E376689C256E9370005D27A9 /* App.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E37668A6256E9372005D27A9 /* Debug */ = {
+		E37668A6256E9372005D27A9 /* Debug configuration for PBXProject "Copy URL" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -166,9 +165,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YG56YK5RN5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -183,20 +185,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E37668A7256E9372005D27A9 /* Release */ = {
+		E37668A7256E9372005D27A9 /* Release configuration for PBXProject "Copy URL" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -227,9 +231,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YG56YK5RN5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -238,16 +245,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		E37668A9256E9372005D27A9 /* Debug */ = {
+		E37668A9256E9372005D27A9 /* Debug configuration for PBXNativeTarget "Copy URL" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -257,10 +265,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = YG56YK5RN5;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Copy URL/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -273,7 +284,7 @@
 			};
 			name = Debug;
 		};
-		E37668AA256E9372005D27A9 /* Release */ = {
+		E37668AA256E9372005D27A9 /* Release configuration for PBXNativeTarget "Copy URL" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -283,10 +294,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = YG56YK5RN5;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Copy URL/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -305,19 +319,17 @@
 		E3766893256E9370005D27A9 /* Build configuration list for PBXProject "Copy URL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E37668A6256E9372005D27A9 /* Debug */,
-				E37668A7256E9372005D27A9 /* Release */,
+				E37668A6256E9372005D27A9 /* Debug configuration for PBXProject "Copy URL" */,
+				E37668A7256E9372005D27A9 /* Release configuration for PBXProject "Copy URL" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		E37668A8256E9372005D27A9 /* Build configuration list for PBXNativeTarget "Copy URL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E37668A9256E9372005D27A9 /* Debug */,
-				E37668AA256E9372005D27A9 /* Release */,
+				E37668A9256E9372005D27A9 /* Debug configuration for PBXNativeTarget "Copy URL" */,
+				E37668AA256E9372005D27A9 /* Release configuration for PBXNativeTarget "Copy URL" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

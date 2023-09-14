@@ -19,7 +19,7 @@ The use-case is being able to quickly copy a URL by clicking it when using a bro
 
 [**Latest release**](https://github.com/sindresorhus/Copy-URL/releases/latest)
 
-<sup>Requires macOS 12 or later.</sup>
+<sup>Requires macOS 13 or later.</sup>
 
 ## Install
 
